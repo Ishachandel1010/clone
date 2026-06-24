@@ -1,2 +1,10 @@
 #!/bin/sh
-echo "Checking code before commit..."
+
+echo "Running tests..."
+
+python -m pytest
+
+if [ $? -ne 0 ]; then
+    echo "Tests failed. Commit blocked."
+    exit 1
+fi
