@@ -8,3 +8,5 @@ if [ $? -ne 0 ]; then
     echo "Tests failed. Commit blocked."
     exit 1
 fi
+
+exit 0
