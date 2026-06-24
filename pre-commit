@@ -2,7 +2,7 @@
 
 echo "Running tests..."
 
-python -m pytest
+python3 -m pytest
 
 if [ $? -ne 0 ]; then
     echo "Tests failed. Commit blocked."
